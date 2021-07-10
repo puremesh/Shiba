@@ -1,5 +1,5 @@
--- Shiba Hub Reanimation 2021. Credits go to Mizt.
-print("Shiba Hub Reanimation 2021. Credits go to Mizt.")
+-- Shiba Hub Reanimation 2021. Credits go to Mizt & Joe https://discord.gg/nxqqdnkDFP.
+print("Shiba Hub Reanimation 2021. Credits go to Mizt & Joe.\nhttps://discord.gg/nxqqdnkDFP")
 local hb1 = game:GetService("RunService").Heartbeat
 
 HumanDied = false
