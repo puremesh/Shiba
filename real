@@ -52,7 +52,6 @@ game:WaitForChild("Run Service").Heartbeat:Connect(function()
         LeftArm.Velocity = Vector3.new(-28.05,1,1)
         LeftLeg.Velocity = Vector3.new(-28.05,1,1)
         Torso.Velocity = Vector3.new(-28.05,1,1)
-        HumanoidRootPart.Velocity = Vector3.new(-28.05,1,1)
         for _, Accessories in pairs(Character:GetDescendants()) do
             if Accessories:IsA("Accessory") then
                 Accessories.Handle.Velocity = Vector3.new(-28.05,1,1)
