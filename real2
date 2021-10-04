@@ -195,6 +195,16 @@ while true do
                 end
             end)
         end
+        for n,l in pairs(Character:children()) do 
+            pcall(function()
+                if l.className=="Part" then 
+                    l.CanCollide=false 
+                elseif 
+                    l.ClassName=="Model" then 
+                        l.Head.CanCollide=false 
+                end
+            end)
+        end
     end
 game:service("RunService").Stepped:wait()
 end
