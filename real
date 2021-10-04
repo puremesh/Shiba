@@ -51,7 +51,7 @@ game:WaitForChild("Run Service").Heartbeat:Connect(function()
         RightLeg.Velocity = Vector3.new(-28.05,1,1)
         LeftArm.Velocity = Vector3.new(-28.05,1,1)
         LeftLeg.Velocity = Vector3.new(-28.05,1,1)
-        Torso.Velocity = Vector3.new(-28.05,1,1)
+        Torso.Velocity = Vector3.new(-28.05,1,1) -- very specific number
         for _, Accessories in pairs(Character:GetDescendants()) do
             if Accessories:IsA("Accessory") then
                 Accessories.Handle.Velocity = Vector3.new(-28.05,1,1)
@@ -186,6 +186,16 @@ spawn(function()
 while true do 
     if something == true then 
         for n,l in pairs(Character.Shiba:children()) do 
+            pcall(function()
+                if l.className=="Part" then 
+                    l.CanCollide=false 
+                elseif 
+                    l.ClassName=="Model" then 
+                        l.Head.CanCollide=false 
+                end
+            end)
+        end
+        for n,l in pairs(Character:children()) do 
             pcall(function()
                 if l.className=="Part" then 
                     l.CanCollide=false 
