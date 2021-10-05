@@ -75,7 +75,6 @@ Character.Torso["Left Shoulder"]:Destroy()
 Character.Torso["Right Shoulder"]:Destroy()
 Character.Torso["Left Hip"]:Destroy()
 Character.Torso["Right Hip"]:Destroy()
-HumanoidRootPart.RootJoint:Destroy()
 --  Using Mizt's align
 local CountSCIFIMOVIELOL = 1
 function AlignCharacter(Part0,Part1,Position,Angle)
