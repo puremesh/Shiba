@@ -1,5 +1,7 @@
 -- you probably used http spy to get to this, so hello! :D
-_G.Velocity = Vector3.new(37.05,0,0)
+settings().Physics.AllowSleep = false 
+settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled_
+G.Velocity = Vector3.new(37.05,0,0)
 -- Creating Early Variables.
 local Player = game.Players.LocalPlayer
 local Character = Player.Character
@@ -8,6 +10,7 @@ local Physics = settings().Physics
 local Head = Character:FindFirstChild("Head")
 local Torso = Character:FindFirstChild("Torso")
 local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
+HumanoidRootPart.RootJoint:Destroy()
 local Humanoid = Character:FindFirstChild("Humanoid")
 local LeftArm = Character:FindFirstChild("Left Arm")
 local LeftLeg = Character:FindFirstChild("Left Leg")
