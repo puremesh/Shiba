@@ -1,7 +1,7 @@
 -- you probably used http spy to get to this, so hello! :D
 settings().Physics.AllowSleep = false 
 settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
-G.Velocity = Vector3.new(37.05,0,0)
+_G.Velocity = Vector3.new(37.05,0,0)
 -- Creating Early Variables.
 local Player = game.Players.LocalPlayer
 local Character = Player.Character
