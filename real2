@@ -1,7 +1,7 @@
 -- you probably used http spy to get to this, so hello! :D
 settings().Physics.AllowSleep = false 
-settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled_
-G.Velocity = Vector3.new(37.05,0,0)
+settings().Physics.PhysicsEnvironmentalThrottle = Enum.EnviromentalPhysicsThrottle.Disabled
+_G.Velocity = Vector3.new(37.05,0,0)
 -- Creating Early Variables.
 local Player = game.Players.LocalPlayer
 local Character = Player.Character
@@ -10,7 +10,6 @@ local Physics = settings().Physics
 local Head = Character:FindFirstChild("Head")
 local Torso = Character:FindFirstChild("Torso")
 local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
-HumanoidRootPart.RootJoint:Destroy()
 local Humanoid = Character:FindFirstChild("Humanoid")
 local LeftArm = Character:FindFirstChild("Left Arm")
 local LeftLeg = Character:FindFirstChild("Left Leg")
@@ -54,7 +53,7 @@ game:WaitForChild("Run Service").Heartbeat:Connect(function()
         RightLeg.Velocity = Vector3.new(-28.05,1,1)
         LeftArm.Velocity = Vector3.new(-28.05,1,1)
         LeftLeg.Velocity = Vector3.new(-28.05,1,1)
-        Torso.Velocity = Vector3.new(6969,6969,6969) -- very specific number
+        Torso.Velocity = Vector3.new(9696,9696,9696) -- very specific number
         for _, Accessories in pairs(Character:GetDescendants()) do
             if Accessories:IsA("Accessory") then
                 Accessories.Handle.Velocity = Vector3.new(-28.05,1,1)
@@ -78,6 +77,7 @@ Character.Torso["Left Shoulder"]:Destroy()
 Character.Torso["Right Shoulder"]:Destroy()
 Character.Torso["Left Hip"]:Destroy()
 Character.Torso["Right Hip"]:Destroy()
+HumanoidRootPart.RootJoint:Destroy()
 --  Using Mizt's align
 local CountSCIFIMOVIELOL = 1
 function AlignCharacter(Part0,Part1,Position,Angle)
