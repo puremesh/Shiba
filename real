@@ -10,7 +10,6 @@ local Physics = settings().Physics
 local Head = Character:FindFirstChild("Head")
 local Torso = Character:FindFirstChild("Torso")
 local HumanoidRootPart = Character:FindFirstChild("HumanoidRootPart")
-HumanoidRootPart.RootJoint:Destroy()
 local Humanoid = Character:FindFirstChild("Humanoid")
 local LeftArm = Character:FindFirstChild("Left Arm")
 local LeftLeg = Character:FindFirstChild("Left Leg")
@@ -78,6 +77,7 @@ Character.Torso["Left Shoulder"]:Destroy()
 Character.Torso["Right Shoulder"]:Destroy()
 Character.Torso["Left Hip"]:Destroy()
 Character.Torso["Right Hip"]:Destroy()
+HumanoidRootPart.RootJoint:Destroy()
 --  Using Mizt's align
 local CountSCIFIMOVIELOL = 1
 function AlignCharacter(Part0,Part1,Position,Angle)
